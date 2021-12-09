@@ -9,7 +9,7 @@ import os
 import secrets
 from waitress import serve
 
-serverURL = secrets.default_url # Needs to be updated on server
+serverURL = secrets.default_url
 
 app = Flask(__name__)
 app.secret_key = secrets.secret_key
