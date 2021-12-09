@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<title>How many Greens?</title>
+		<link rel="icon" type="image/x-icon" href="/favicon.ico">
+	</head>
+	<body>
+		{% if name %}
+		<p>Hi, <a href="https://www.strava.com/athletes/{{ id }}">{{ name }}</a></p>
+		<p>You've done Green {{ greens }} times! Log out and log back in to update your stats.</p>
+		{% else %}
+		<p><a href='{{ url }}'>Login with Strava</a> to view how many times you've done Green.</p>
+		{% endif %}
+		<div id="list">
+			{% for person in people %}
+			<a href="https://www.strava.com/athletes/{{ person.id }}">{{ person.name }}</a> has done {{ person.greens }} as of {{ person.lastupdate }} days ago.<br />
+			{% endfor %}
+		</div>
+		
+<!-- 		<table>
+			<tr>
+				<th>Name</th>
+				<th>Number of Greens</th>
+			</tr>
+			{% for person in people %}
+			<tr>
+				<td><a href="https://www.strava.com/athletes/{{ person.id }}">{{ person.name }}</a></td>
+				<td>{{ person.greens }} as of {{ person.lastupdate }} days ago</td>
+			</tr>
+			{% endfor %}
+		</table> -->
+		{% if name %}
+		<p><a href="/logout">Log Out</a></p>
+		{% endif %}
+	</body>
+</html>

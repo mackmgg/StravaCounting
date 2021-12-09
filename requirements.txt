@@ -1,0 +1,27 @@
+arrow==1.2.1
+certifi==2021.10.8
+charset-normalizer==2.0.9
+click==8.0.3
+clipboard==0.0.4
+Flask==2.0.2
+Flask-SQLAlchemy==2.5.1
+idna==3.3
+itsdangerous==2.0.1
+Jinja2==3.0.3
+MarkupSafe==2.0.1
+numpy==1.21.4
+pshclient @ git+https://github.com/platformsh/platformsh-client-python.git@b45910e194ffab84920d70df644b8d120e74ce9d
+psycopg==3.0.5
+psycopg2==2.9.2
+pyperclip==1.8.2
+python-dateutil==2.8.2
+pytz==2021.3
+requests==2.26.0
+six==1.16.0
+SQLAlchemy==1.4.27
+stravalib==0.10.4
+swaggerpy==0.2.1
+units==0.7
+urllib3==1.26.7
+websocket-client==1.2.3
+Werkzeug==2.0.2

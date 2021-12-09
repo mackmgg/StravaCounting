@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<title>How many Greens?</title>
+	</head>
+	<body>
+		<p>Hi, <a href="https://www.strava.com/athletes/{{ id }}">{{ name }}</a></p>
+		<p>You've done Green {{ greens }} times!</p>
+		<table>
+			<tr>
+				<th>Name</th>
+				<th>Number of Greens</th>
+			</tr>
+			{% for user in userlist %}
+			<tr>
+				<td><a href="https://www.strava.com/athletes/{{ user.id }}">{{ user.name }}</a></td>
+				<td>{{ user.greens }}</td>
+			</tr>
+			{% endfor %}
+		</table>
+	</body>
+</html>
