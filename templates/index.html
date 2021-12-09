@@ -12,7 +12,7 @@
 		{% endif %}
 		<div id="list">
 			{% for person in people %}
-			<a href="https://www.strava.com/athletes/{{ person.id }}">{{ person.name }}</a> has done {{ person.greens }} as of {{ person.lastupdate }} days ago.<br />
+			<a href="https://www.strava.com/athletes/{{ person.id }}">{{ person.name }}</a> has done {{ person.greens }} as of {{ person.lastupdate }} day{% if person.lastupdate != 1 %}s{% endif %} ago.<br />
 			{% endfor %}
 		</div>
 		
