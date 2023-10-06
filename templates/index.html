@@ -8,7 +8,7 @@
 		<p>Hi, <a href="https://www.strava.com/athletes/{{ id }}">{{ name }}</a></p>
 		<p>You've done Green {{ greens }} times! Log out and log back in to update your stats.</p>
 		{% else %}
-		<p><a href='{{ url }}'><img src="/media/btn_strava_connectwith_orange.svg" alt="Connect with Strava" /></a> to view how many times you've done Green.</p>
+		<p><a href='{{ url }}'><img style="vertical-align:middle" src="/media/btn_strava_connectwith_orange.svg" alt="Connect with Strava" /></a> to view how many times you've done Green.</p>
 		{% endif %}
 		<div id="list">
 			{% for person in people %}
@@ -17,8 +17,8 @@
 		</div>
 		{% if name %}
 		<p><a href="/logout">Log Out</a></p>
-		<p><img src="/media/api_logo_pwrdBy_strava_horiz_light.svg" alt="Powered by Strava" /></p>
 		{% endif %}
+		<p><img src="/media/api_logo_pwrdBy_strava_horiz_light.svg" alt="Powered by Strava" /></p>
 		<script defer data-domain="strava.mack.im" src="https://plausible.mack.im/js/plausible.js"></script>
 	</body>
 </html>
