@@ -15,22 +15,10 @@
 			<a href="https://www.strava.com/athletes/{{ person.id }}">{{ person.name }}</a> has done {{ person.greens }} as of {{ person.lastupdate }} day{% if person.lastupdate != 1 %}s{% endif %} ago.<br />
 			{% endfor %}
 		</div>
-		
-<!-- 		<table>
-			<tr>
-				<th>Name</th>
-				<th>Number of Greens</th>
-			</tr>
-			{% for person in people %}
-			<tr>
-				<td><a href="https://www.strava.com/athletes/{{ person.id }}">{{ person.name }}</a></td>
-				<td>{{ person.greens }} as of {{ person.lastupdate }} days ago</td>
-			</tr>
-			{% endfor %}
-		</table> -->
 		{% if name %}
 		<p><a href="/logout">Log Out</a></p>
 		<p><img src="/media/api_logo_pwrdBy_strava_horiz_light.svg" alt="Powered by Strava" /></p>
 		{% endif %}
+		<script defer data-domain="strava.mack.im" src="https://plausible.mack.im/js/plausible.js"></script>
 	</body>
 </html>
